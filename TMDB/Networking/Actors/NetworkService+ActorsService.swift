@@ -23,6 +23,7 @@ extension NetworkManager {
                     do {
                         let result = try JSONDecoder().decode(APIResponse<Person>.self, from: response.data)
                         completion(.success(result), response.statusCode)
+                       
                     } catch {
                         completion(.failure(NetworkError.parseError), response.statusCode)
                     }

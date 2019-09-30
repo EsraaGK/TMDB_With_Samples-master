@@ -28,9 +28,9 @@ protocol ViewFetchable {
     
     // MARK: - Load Data
     @objc
-    optional func loadDataSuccess(date:Any)
+    func loadDataSuccess(date:Any)
     @objc
-    optional func loadDataFailed(with error: Error?)
+    func loadDataFailed(with error: Error?)
     
 }
 

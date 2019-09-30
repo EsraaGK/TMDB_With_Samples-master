@@ -12,7 +12,7 @@ import Foundation
 //    
 //}
 
-protocol BaseListAdapterProtocal:class {
+internal protocol BaseListAdapterProtocal:class {
     associatedtype DataType
 //    associatedtype AdapterDelegate where AdapterDelegate:listAdapterDelegate
 

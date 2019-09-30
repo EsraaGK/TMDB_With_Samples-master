@@ -14,9 +14,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 	var window: UIWindow?
 
 	func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-//    window = UIWindow(frame: UIScreen.main.bounds) // to know the dimentions
-//        window?.rootViewController = ListActorModule.instance
         setupNetworking()
+        
+    window = UIWindow(frame: UIScreen.main.bounds) // to know the dimentions
+        window?.rootViewController = ListActorModule.actorViewObj
+        
+        window?.makeKeyAndVisible()
         return true
 	}
 

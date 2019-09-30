@@ -10,9 +10,11 @@ import Foundation
 
 class BasePresenter:NSObject, BasePresenterProtocol {
     
-    required init(view: BaseViewProtocal, model: BaseModelProtocal) {
-        
-    }
+    
+//    cases an error in the child init bec it won't see the other 
+//    required init(view: BaseViewProtocal, model: BaseModelProtocal) {
+//
+//    }
     
     
 }

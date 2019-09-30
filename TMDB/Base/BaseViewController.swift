@@ -11,11 +11,13 @@ import Foundation
 
 class BaseViewController<Presenter:BasePresenterProtocol>: UIViewController, BaseViewProtocal {
     
+    
+    
     // MARK: - Public Variables
     
     // MARK: - Private Variables
     
-    var presenter:BasePresenterProtocol!
+    var presenter:Presenter!
     
     // MARK: - Computed Variables
     
@@ -25,4 +27,13 @@ class BaseViewController<Presenter:BasePresenterProtocol>: UIViewController, Bas
     public func setPresenter (presenter: Presenter) {
         self.presenter = presenter
     }
+    
+    func loadDataFailed(with error: Error?) {
+        
+    }
+    
+    func loadDataSuccess(date: Any) {
+        
+    }
+    
 }
